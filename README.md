@@ -81,3 +81,4 @@ Hi, I'm Atte and I created this because I wanted to share our wedding photos on 
 - Infinite scroll uses some code from Jared Palmer's [react-simple-infinite-scroll](https://github.com/jaredpalmer/react-simple-infinite-scroll).
 - Gallery CSS Grid is modified from work by [LekoArts](https://www.lekoarts.de/).
 - I will create a demo site with photos from [Unsplash](https://unsplash.com).
+# gatsby-gallery
