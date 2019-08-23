@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Photo Book`,
-    description: `Share your photosets with style.`,
-    author: `baobabKoodaa`,
+    title: `Jake Cavazos' Photo Book`,
+    description: `Candid black and white iPhoneography.`,
+    author: `Visual Cloud FX`,
   },
   plugins: [
     {
@@ -43,6 +43,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
+     'gatsby-plugin-offline',
   ],
 }
