@@ -183,10 +183,10 @@ class PostcardTemplate extends React.Component {
       <>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>{`Photo from Gatsby Starter Photo Book` /* Note: not a good idea to put image id here (needs JS to render the correct id). */}</title>
-          
+          <title>{`Photo from Jake Cavazos' Photo Book` /* Note: not a good idea to put image id here (needs JS to render the correct id). */}</title>
+
           <style>
-            {/* 
+            {/*
                 Set some CSS attributes into html and body tags of this page.
                 We do this here because a Gatsby bug prevents us from doing it the clean way
                 (which would be: using separate CSS files for setting separate html/body attributes to different pages).
@@ -229,20 +229,20 @@ class PostcardTemplate extends React.Component {
 
                   {/* Navbuttons: prev/next (even though clicking anywhere on the page works, we want to help the user understand what they can do). */}
                   <Link to={`/images/${c.prevId}`} state={this.getStatePassForPrev()} >
-                    <FaArrowLeft className="arrowButtons" style={{ left: "10px", top: "50%", transform: "translateY(-50%)" }} title="Edellinen kuva" />
+                    <FaArrowLeft className="arrowButtons" style={{ left: "10px", top: "50%", transform: "translateY(-50%)" }} title="Previous image" />
                   </Link>
                   <Link to={`/images/${c.nextId}`} state={this.getStatePassForNext()} >
-                    <FaArrowRight className="arrowButtons" style={{ right: "10px", top: "50%", transform: "translateY(-50%)" }} title="Seuraava kuva" />
+                    <FaArrowRight className="arrowButtons" style={{ right: "10px", top: "50%", transform: "translateY(-50%)" }} title="Next image" />
                   </Link>
 
                   {/* Flash cues for small screens instead of sticking prev/next buttons. */}
                   {this.state.currentImageLoaded && (
                     <FlashCue g={globalState} additionalWait={this.placeholderTransitionDuration} zIndex={this.zIndexes["flashCue"]} />
                   )}
-                 
+
                   {/* Navbutton: Top right 'x' to 'close' the image and return to gallery. */}
                   <span className="x">
-                    <Link to={`/#id${c.image.id}`} state={{ highlight: c.image.id }} title="Takaisin Galleriaan" >
+                    <Link to={`/#id${c.image.id}`} state={{ highlight: c.image.id }} title="Return to gallery" >
                       <FaTimesCircle style={{ right: "10px", top: "10px" }} />
                     </Link>
                   </span>
@@ -250,17 +250,17 @@ class PostcardTemplate extends React.Component {
                   {/* Navbutton: Fullscreen toggle. */}
                   <span className="fullscreen">
                     {this.state.isFullScreen && (
-                      <FaCompress style={{ right: "10px", bottom: "10px", cursor: "pointer" }} title="Laajenna koko näytölle" onClick={this.exitFullScreenAndRender} />
+                      <FaCompress style={{ right: "10px", bottom: "10px", cursor: "pointer" }} title="Exit fullscreen" onClick={this.exitFullScreenAndRender} />
                     )}
                     {!this.state.isFullScreen && (
-                      <FaExpand style={{ right: "10px", bottom: "10px", cursor: "pointer" }} title="Poistu koko näytön tilasta" onClick={this.enterFullScreenAndRender} />
+                      <FaExpand style={{ right: "10px", bottom: "10px", cursor: "pointer" }} title="Enter fullscreen" onClick={this.enterFullScreenAndRender} />
                     )}
                   </span>
 
                   {/* Navbutton: Download image. */}
                   <span className="download">
                     <a href={c.image.fluid.originalImg} download >
-                      <FaDownload style={{ right: "80px", bottom: "12px" }} title="Lataa kuva" />
+                      <FaDownload style={{ right: "80px", bottom: "12px" }} title="Download image" />
                     </a>
                   </span>
 
@@ -423,7 +423,7 @@ class PostcardTemplate extends React.Component {
                         :global(svg):hover {
                           opacity: 1;
                         }
-                        
+
                     `}
                   </style>
               </>
