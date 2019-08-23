@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Jake Cavazos' Photo Book`,
     description: `Candid black & white iPhoneography.`,
-    author: `Visual Cloud FX`,
+    author: `VisualCloudFX`,
   },
   plugins: [
     {
@@ -24,7 +24,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/content/images/`,
+        path: `${__dirname}/content/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -43,6 +43,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    "gatsby-plugin-offline",
+    // "gatsby-plugin-offline",
   ],
 }

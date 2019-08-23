@@ -1,5 +1,5 @@
 const path = require(`path`)
-const fs = require("fs")
+const fs = require(`fs`)
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
