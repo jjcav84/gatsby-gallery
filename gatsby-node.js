@@ -141,7 +141,7 @@ exports.createPages = ({ graphql, actions }) => {
     /* Create pages for images, too. */
     for (var currId = 1; currId < nextFreeId; currId++) {
       const pageData = {
-        path: `/images/${currId}`,
+        path: `images/${currId}`,
         component: path.resolve(`src/templates/postcardTemplate.js`),
         context: pageContexts[currId],
       }
@@ -150,7 +150,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     /* Create a special dummy page needed for instant navigation from Gallery to image (explained in README). */
     createPage({
-      path: `/images/fromGallery`,
+      path: `images/fromGallery`,
       component: path.resolve(`src/templates/postcardTemplate.js`),
       context: dummyContext(),
     })
