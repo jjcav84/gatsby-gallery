@@ -27,7 +27,7 @@
     "react-helmet": "5.2.1",
     "react-icons": "3.8.0",
     "screenfull": "5.0.0",
-    "styled-jsx": "3.2.4",
+    "styled-jsx": "3.4.7",
     "typeface-open-sans": "0.0.75",
     "typescript": "3.7.4"
   },
